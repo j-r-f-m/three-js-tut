@@ -30,8 +30,10 @@ const boxGeometry = new THREE.BoxGeometry(3, 3, 3);
 // create new cube
 const cube = new THREE.Mesh(boxGeometry, boxMaterial);
 cube.position.set(0, 1.5, 0)
+
 // add the cube to the scene;
 scene.add(cube);
+scene.add(toolbar);
 // set light
 components.scene.setup();
 
